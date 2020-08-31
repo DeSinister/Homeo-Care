@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homeocare</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="page">
+    <%=render partial: 'layouts/navbar'%>
+       <main class="content">
+         <div class="content_inner">
+           <%= yield %>
+           <%=render partial: 'layouts/footer'%>
+         </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+
+  <span class="menu_toggle">
+    <i class="menu_open fa fa-bars fa-lg"></i>
+    <i class="menu_close fa fa-times fa-lg"></i>
+  </span>
+
+  <ul class="menu_items">
+    <li>
+      <%=link_to root_path do%>
+        <i class="icon fa fa-home fa-2x"></i> Home
+      <%end%>
+    </li>
+    <li>
+      <%=link_to contact_path do%>
+        <i class="icon fa fa-address-book fa-2x"></i> Contact Us
+      <%end%>
+    </li>
+    <li>
+      <%=link_to meeting_path do%>
+        <i class="icon fa fa-coffee fa-2x"></i> Book a Meeting
+      <%end%>
+    </li>
+
+  </ul>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+  // elements
+  var page = $('.page');
+
+  $('.menu_toggle').on('click', function(){
+    page.toggleClass('shazam');
+  });
+  $('.content').on('click', function(){
+    page.removeClass('shazam');
+  });
+</script>
