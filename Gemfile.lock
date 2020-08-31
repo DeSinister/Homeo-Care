@@ -250,7 +250,7 @@ DEPENDENCIES
   selenium-webdriver
   simple_form
   slim-rails
-  sqlite3 (~> 1.4)
+  sqlite3
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)
